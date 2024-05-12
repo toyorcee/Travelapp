@@ -119,8 +119,20 @@
   border-color: rgb(201, 136, 15);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) and (min-width: 426px) {
   .inputsContainer {
     flex-direction: column;
+    margin: 5px 0px;
+    top: 44%;
+    opacity: 0.85;
+    left: 4%;
+  }
+  .titles {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+  }
+  .container{
+    height: 110vh;
   }
 }

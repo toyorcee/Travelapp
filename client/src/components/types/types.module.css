@@ -74,3 +74,10 @@
     padding: 0.75rem 1.5rem;
     border-radius: 0 8px 0 0;
 }
+
+@media (max-width: 768px) and (min-width: 426px){
+    .types{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-column-gap: 3rem;
+    }
+}

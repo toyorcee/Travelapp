@@ -17,7 +17,7 @@
 
 /*md: flex-row*/
 
-.fly{
+.fly {
   width: 12%;
   height: 12%;
   object-fit: cover;
@@ -60,29 +60,24 @@
   color: #ee9d06;
 }
 
-.center {
-  flex: 2;
+.navmenu {
   display: flex;
-  justify-content: center;
-}
-
-.center > .list {
-  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  list-style: none;
-  gap: 2rem;
+  justify-content: center;
+  list-style-type: none;
 }
 
-.listItem > a {
+.ul > li {
   text-decoration: none;
-  font-weight: 500;
-  font-size: 22px;
+  font-weight: 600;
+  font-size: 25px;
   transition: 200ms all;
   cursor: pointer;
   color: #222;
 }
 
-.listItem > a:hover {
+.ul > li:hover {
   color: #ee9d06;
 }
 
@@ -150,4 +145,83 @@
   font-size: 22px;
   cursor: pointer;
   margin-left: 0.75rem;
+}
+
+.navdropdown {
+  display: none;
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+  .navdropdown {
+    display: block;
+    width: 30px;
+    rotate: -90deg;
+    transition: 0.5s;
+  }
+  .navmenu {
+    display: none;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    max-width: auto;
+    top: 55px;
+  }
+  .navmenuvisible {
+    display: flex;
+  }
+  .navdropdown.rotate {
+    transform: rotate(90deg);
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+  .logout {
+    padding: 0px;
+  }
+  .listItem > a{
+    font-size: large;
+  }
+}
+@media (max-width: 425px) and (min-width: 1px) {
+  .navdropdown {
+    display: block;
+    width: 30px;
+    rotate: -90deg;
+    transition: 0.5s;
+  }
+  .navmenu {
+    display: none;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    max-width: auto;
+    top: 55px;
+  }
+  .navmenuvisible {
+    display: flex;
+  }
+  .navdropdown.rotate {
+    transform: rotate(90deg);
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+  .logout {
+    padding: 0px;
+  }
+  .listItem > a{
+    font-size: medium;
+  }
 }
