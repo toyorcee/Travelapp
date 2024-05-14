@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import classes from "./SuggestedPlaces.module.css";
 import { AiFillStar } from "react-icons/ai";
 import { Link, useParams } from "react-router-dom";
-import { suggestedPlacesData } from "../../data/data";
-import img from "../../assets/img3.jpg";
 import { useSelector } from "react-redux";
+// import { suggestedPlacesData } from "../../data/data";
+// import img from "../../assets/img3.jpg";
 
 const SuggestedPlaces = () => {
   const [estates, setEstates] = useState([]);
@@ -45,7 +45,7 @@ const SuggestedPlaces = () => {
               key={suggestedPlace._id}
             >
               <div className={classes.imgWrapper}>
-                <img src={img} alt="" />
+                <img src={`http://localhost:5000/images/${suggestedPlace.photo}`} alt="" />
               </div>
               <div className={classes.titleAndReview}>
                 <span>{suggestedPlace.title}</span>

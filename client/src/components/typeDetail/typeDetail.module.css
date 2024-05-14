@@ -179,3 +179,16 @@
   top: 5rem;
   right: 5rem;
 }
+
+@media screen and (max-width: 425px) and (min-width: 1px) {
+  .wrapper {
+    align-items: center;
+    flex-direction: column;
+  }
+  .imgWrapper {
+    height: 400px;
+  }
+  .imgWrapper > img {
+    object-fit: cover;
+  }
+}

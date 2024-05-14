@@ -18,8 +18,8 @@
 /*md: flex-row*/
 
 .fly {
-  width: 12%;
-  height: 12%;
+  max-width: 50px;
+  height: 50px;
   object-fit: cover;
 }
 
@@ -53,13 +53,6 @@
   text-decoration: none;
 }
 
-.left > a > h2 {
-  text-decoration: none;
-  font-size: 34px;
-  font-weight: bold;
-  color: #ee9d06;
-}
-
 .navmenu {
   display: flex;
   flex-wrap: wrap;
@@ -68,16 +61,16 @@
   list-style-type: none;
 }
 
-.ul > li {
+.navmenu > li {
   text-decoration: none;
   font-weight: 600;
   font-size: 25px;
   transition: 200ms all;
   cursor: pointer;
-  color: #222;
+  margin: 10px;
 }
 
-.ul > li:hover {
+.navmenu > li:hover {
   color: #ee9d06;
 }
 
@@ -92,17 +85,17 @@
 .right > a {
   text-decoration: none;
   color: inherit;
-  font-size: 22px;
+  /* font-size: 22px; */
 }
 
 .login {
   text-decoration: none;
   outline: none;
   border: 1px solid transparent;
-  color: #fff;
-  background-color: #ee9d06;
+  color: #ee9d06;
   padding: 0.5rem 1.5rem;
-  font-size: 20px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   font-weight: bold;
   border-radius: 20px;
   cursor: pointer;
@@ -110,7 +103,6 @@
 }
 
 .login:hover {
-  background-color: #fff;
   color: #ee9d06;
   border-color: #ee9d06;
 }
@@ -119,10 +111,10 @@
   text-decoration: none;
   outline: none;
   border: 1px solid transparent;
-  color: rgb(199, 146, 48);
-  background-color: #e0dada;
+  color: #ee9d06;
   padding: 0.5rem 1.25rem;
-  font-size: 20px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   font-weight: bold;
   border-radius: 20px;
   cursor: pointer;
@@ -130,21 +122,21 @@
 }
 
 .signup:hover {
-  background-color: #ee9d06;
-  color: #fff;
+  color: #ee9d06;
 }
 
 .username {
-  font-size: 20px;
-  color: #333;
+  color: #4162db;
   font-weight: 500;
+  font-size: 1rem;
+  line-height: 1rem;
 }
 
 .logout {
-  color: #755c29;
-  font-size: 22px;
+  color: #ee9d06;
   cursor: pointer;
-  margin-left: 0.75rem;
+  font-size: 1rem;
+  line-height: 1rem;
 }
 
 .navdropdown {
@@ -184,16 +176,17 @@
   .logout {
     padding: 0px;
   }
-  .listItem > a{
+  .listItem > a {
     font-size: large;
   }
 }
-@media (max-width: 425px) and (min-width: 1px) {
+@media (max-width: 425px) and (min-width: 376px) {
   .navdropdown {
     display: block;
-    width: 30px;
+    width: 20px;
     rotate: -90deg;
     transition: 0.5s;
+    margin-right: 50px;
   }
   .navmenu {
     display: none;
@@ -221,7 +214,93 @@
   .logout {
     padding: 0px;
   }
-  .listItem > a{
+  .listItem > a {
     font-size: medium;
+  }
+  .username {
+    font-size: 20px;
+  }
+  .logout {
+    font-size: 20px;
+  }
+}
+@media (max-width: 375px) and (min-width: 321px){
+  .navdropdown {
+    display: block;
+    width: 20px;
+    rotate: -90deg;
+    transition: 0.5s;
+    margin-left: 15px;
+  }
+  .navmenu {
+    display: none;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    max-width: auto;
+    top: 55px;
+  }
+  .navmenuvisible {
+    display: flex;
+  }
+  .navdropdown.rotate {
+    transform: rotate(90deg);
+  }
+  .wrapper {
+    max-width: 380px;
+  }
+  .container {
+    max-width: 380px;
+  }
+  .username {
+    font-size: 20px;
+  }
+  .logout {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 320px) and (min-width: 1px) {
+  .container{
+    max-width: 350px;
+  }
+  .wrapper{
+    max-width: 350px;
+  }
+  .navdropdown {
+    display: block;
+    width: 20px;
+    rotate: -90deg;
+    transition: 0.5s;
+  }
+  .navmenu {
+    display: none;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    max-width: auto;
+    top: 60px;
+  }
+  .navmenuvisible {
+    display: flex;
+  }
+  .navdropdown.rotate {
+    transform: rotate(90deg);
+  }
+  .username {
+    font-size: 20px;
+  }
+  .logout {
+    font-size: 20px;
+  }
+  .right{
+    gap: 0.55rem;
+  }
+  .create{
+    color: #ee9d06;
   }
 }

@@ -29,6 +29,12 @@ const Types = () => {
     fetchTypes();
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  // console.log(Object.entries)
+
   return (
     <section id="services" className={classes.container}>
       <div className={classes.wrapper}>

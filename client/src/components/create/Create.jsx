@@ -83,7 +83,7 @@ const Create = () => {
     <div className={classes.container}>
       <div className={classes.wrapper}>
         <h2 className={classes.title}>Create product</h2>
-        <form onSubmit={handleCreateProduct} encType="multipart/form-data">
+        <form onSubmit={handleCreateProduct} encType="multipart/form-data" className={classes.form}>
           <div className={classes.inputWrapper}>
             <label>Title: </label>
             <input

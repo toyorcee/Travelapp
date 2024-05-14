@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import airplane from "../../assets/airplane-fly.jpg";
+// import airplane from "../../assets/airplane-fly.jpg";
+import logot from "../../assets/logot.jpg";
 import classes from "./navbar.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../redux/authSlice";
@@ -35,10 +36,9 @@ const Navbar = () => {
         <div className={classes.left}>
           <Link
             to="/"
-            className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+            className="flex title-font font-medium items-center mb-2 md:mb-0"
           >
-            <img src={airplane} alt="" className={classes.fly} />
-            <h2 className="ml-3 text-xl">Traveller</h2>
+            <img src={logot} alt="" className={classes.fly} />
           </Link>
         </div>
         <img
@@ -49,33 +49,36 @@ const Navbar = () => {
         />
         <ul ref={menuRef} className={classes.navmenu}>
           <li>
-            <Link to="/" className="mr-5 hover:text-[#ee9d06] cursor-pointer">
+            <Link
+              to="/"
+              className=" text-[#ee9d06] hover:text-[#ee9d06] md:text-xl text-xs cursor-pointer"
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link
-              className="mr-5 hover:text-[#ee9d06] cursor-pointer"
+            <a
+              className="text-[#ee9d06] hover:text-[#ee9d06] md:text-xl text-xs cursor-pointer"
               href="#about"
             >
               About
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              className="mr-5 hover:text-[#ee9d06] cursor-pointer"
+            <a
+              className="text-[#ee9d06] hover:text-[#ee9d06] md:text-xl text-xs cursor-pointer"
               href="#services"
             >
               Services
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
-              className="mr-5 hover:text-[#ee9d06] cursor-pointer"
+            <a
+              className="text-[#ee9d06] hover:text-[#ee9d06] md:text-xl text-xs cursor-pointer"
               href="#suggested"
             >
               Suggested
-            </Link>
+            </a>
           </li>
         </ul>
         <div className={classes.right}>
@@ -90,7 +93,9 @@ const Navbar = () => {
             </>
           ) : (
             <>
-              <Link to="/create">Create</Link>
+              <Link to="/create">
+                <p className="text-[#ee9d06]">Create</p>
+              </Link>
               <p className={classes.username}>{user.username}</p>
               <span className={classes.logout} onClick={handleLogout}>
                 Logout

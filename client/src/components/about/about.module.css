@@ -122,8 +122,8 @@
 @media (max-width: 768px) and (min-width: 426px) {
   .inputsContainer {
     flex-direction: column;
-    margin: 5px 0px;
-    top: 44%;
+    margin: 50px 0px;
+    top: 37%;
     opacity: 0.85;
     left: 4%;
   }
@@ -132,7 +132,67 @@
     top: 15%;
     left: 10%;
   }
-  .container{
+  .container {
+    height: 180vh;
+  }
+}
+@media (max-width: 425px) and (min-width: 321px) {
+  .container {
+    height: 120vh;
+  }
+  .inputsContainer {
+    flex-direction: column;
+    margin: 5px 0px;
+    top: 11%;
+    /* opacity: 0.6; */
+    left: 13%;
+  }
+  .titles {
+    /* position: absolute;
+    top: 15%;
+    left: 10%; */
+    display: none;
+  }
+  .container {
     height: 110vh;
+    width: 100%;
+  }
+  .wrapper {
+    background-image: url("../../assets/heronew.jpg");
+    opacity: 0.6;
+  }
+  .imgWrapper > img {
+    display: none;
+  }
+}
+@media (max-width: 320px) and (min-width: 1px) {
+  .container {
+    height: 120vh;
+  }
+  .inputsContainer {
+    flex-direction: column;
+    margin: 0px;
+    opacity: 0.9;
+    left: 10%;
+    top: 18%;
+    width: 80%;
+    height: 80%;
+  }
+  .titles {
+    display: none;
+  }
+  .wrapper {
+    background-image: url("../../assets/heronew.jpg");
+    opacity: 0.6;
+  }
+  .imgWrapper > img {
+    display: none;
+  }
+  .bookBtn {
+    padding: 0.5rem 2rem;
+    background-color: rgb(201, 136, 15);
+    color: #fff;
+    border-radius: 10px;
+    font-size: 18px;
   }
 }

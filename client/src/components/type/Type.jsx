@@ -2,7 +2,6 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import classes from "./type.module.css";
-import img1 from "../../assets/img3.jpg";
 import { AiFillStar } from "react-icons/ai";
 import { Link, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -29,6 +28,10 @@ const Type = () => {
     };
     fetchTypeRooms();
   }, [type]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className={classes.container}>

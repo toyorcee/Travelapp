@@ -81,3 +81,12 @@
         grid-column-gap: 3rem;
     }
 }
+@media (max-width: 425px) and (min-width: 1px){
+    .types{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-column-gap: 3rem;
+    }
+    .type{
+        margin: 10px;
+    }
+}
