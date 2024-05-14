@@ -10,6 +10,10 @@ const app = express();
 // db connecting
 mongoose.connect(process.env.MONGO_URL);
 
+app.get("/", (req, res) => {
+    res.send("Express App is Running");
+  });
+
 // middlewares
 app.use(cors());
 //a must to use req.body else will be undefined

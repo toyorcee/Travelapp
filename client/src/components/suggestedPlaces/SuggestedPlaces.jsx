@@ -36,7 +36,7 @@ const SuggestedPlaces = () => {
           <h2 className={classes.title}>
             Favourite destinations of our clients
           </h2>
-        </div> 
+        </div>
         <div className={classes.places}>
           {estates.map((suggestedPlace) => (
             <Link
@@ -45,7 +45,10 @@ const SuggestedPlaces = () => {
               key={suggestedPlace._id}
             >
               <div className={classes.imgWrapper}>
-                <img src={`http://localhost:5000/images/${suggestedPlace.photo}`} alt="" />
+                <img
+                  src={`http://localhost:5000/images/${suggestedPlace.photo}`}
+                  alt=""
+                />
               </div>
               <div className={classes.titleAndReview}>
                 <span>{suggestedPlace.title}</span>

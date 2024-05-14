@@ -83,7 +83,11 @@ const Create = () => {
     <div className={classes.container}>
       <div className={classes.wrapper}>
         <h2 className={classes.title}>Create product</h2>
-        <form onSubmit={handleCreateProduct} encType="multipart/form-data" className={classes.form}>
+        <form
+          onSubmit={handleCreateProduct}
+          encType="multipart/form-data"
+          className={classes.form}
+        >
           <div className={classes.inputWrapper}>
             <label>Title: </label>
             <input
@@ -126,7 +130,7 @@ const Create = () => {
           </div>
           <div className={classes.inputWrapperImgFirst}>
             <label className={classes.labelFileInput} htmlFor="firstImg">
-               Image: <span>Upload here</span>
+              Image: <span>Upload here</span>
             </label>
             <input
               className={classes.input}
