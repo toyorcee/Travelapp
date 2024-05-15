@@ -147,18 +147,18 @@
   .price {
     font-size: 17px;
   }
-  
+
   .price > span {
     font-size: 16px;
   }
 }
-@media (max-width: 425px) and (min-width: 1px) {
+@media (max-width: 425px) and (min-width: 321px) {
   .titles > .subtitle {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .titles > .title {
-    font-size: 32px;
+    font-size: larger;
   }
 
   .places {
@@ -168,8 +168,13 @@
     column-gap: 4rem;
   }
 
+  .place {
+    background-color: #000;
+  }
+
   .countryAndPrice > span:first-child {
     font-size: 19px;
+    color: #f72798;
   }
 
   .countryAndPrice > span:first-child > span {
@@ -180,7 +185,58 @@
   .price {
     font-size: 17px;
   }
-  
+
+  .price > span {
+    font-size: 16px;
+    color: #f72798;
+  }
+  .titleAndReview > .review > span {
+    color: #fff;
+  }
+  .container {
+    margin: 10rem 0rem;
+  }
+}
+@media (max-width: 320px) and (min-width: 1px) {
+  .titles > .subtitle {
+    font-size: 18px;
+  }
+
+  .titles > .title {
+    font-size: 14px;
+  }
+
+  .places {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    column-gap: 4rem;
+  }
+
+  .place {
+    background-color: #000;
+  }
+
+  .countryAndPrice > span:first-child {
+    font-size: 19px;
+    color: #f72798;
+  }
+
+  .countryAndPrice > span:first-child > span {
+    color: rgb(201, 136, 15);
+    font-size: 19px;
+  }
+
+  .price > span {
+    color: #f72798;
+  }
+
+  .titleAndReview > .review > span {
+    color: #fff;
+  }
+  .price {
+    font-size: 17px;
+  }
   .price > span {
     font-size: 16px;
   }

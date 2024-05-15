@@ -127,7 +127,7 @@
   right: 5rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 426px) {
   .loginContainer {
     background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
       url("../../assets/img2.jpg");
@@ -172,15 +172,15 @@
     display: none;
   }
   .loginWrapper {
-    width: 700px;
+    width: 80%;
   }
   .loginRightSide {
     flex: 1;
-    background-color: #fff;
     height: 100%;
     width: 100%;
     overflow: hidden;
-    border: 0.5px solid rgba(239, 170, 22, 0.944);
+    background-color: #453f78;
+    border-radius: 20px;
   }
   .loginForm {
     display: flex;
@@ -189,11 +189,18 @@
   }
   .loginForm > input {
     width: 80%;
+    border-radius: 7px;
   }
   .loginWrapper {
     height: 90vh;
   }
   .loginContainer {
     height: 100vh;
+  }
+  .loginForm > p {
+    color: #fff;
+  }
+  .loginForm > p > a {
+    color: #ffc94a;
   }
 }

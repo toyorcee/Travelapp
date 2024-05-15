@@ -180,7 +180,7 @@
   right: 5rem;
 }
 
-@media screen and (max-width: 425px) and (min-width: 1px) {
+@media screen and (max-width: 425px) and (min-width: 321px) {
   .wrapper {
     align-items: center;
     flex-direction: column;
@@ -190,5 +190,24 @@
   }
   .imgWrapper > img {
     object-fit: cover;
+  }
+  .title {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 320px) and (min-width: 1px) {
+  .wrapper {
+    align-items: center;
+    flex-direction: column;
+  }
+  .imgWrapper {
+    height: 400px;
+  }
+  .imgWrapper > img {
+    object-fit: cover;
+  }
+  .title {
+    font-size: 12px;
   }
 }

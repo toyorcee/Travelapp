@@ -54,7 +54,7 @@ const SuggestedPlaces = () => {
                 <span>{suggestedPlace.title}</span>
                 <span className={classes.review}>
                   <AiFillStar className={classes.icon} />
-                  {suggestedPlace.review} (2)
+                  <span>{suggestedPlace.review} (2)</span>
                 </span>
               </div>
               <div className={classes.countryAndPrice}>

@@ -165,7 +165,7 @@
     object-fit: cover;
     width: 100%;
     height: auto;
-    padding: 100px 50px;
+    padding: 30px 50px;
   }
   .signupLeftSide {
     display: none;
@@ -173,6 +173,16 @@
   .signupWrapper {
     height: 90vh;
     width: 100%;
+  }
+  .signupForm > p{
+    color: #fff;
+  }
+  .signupForm > p > a{
+    color: #FFC94A;
+  }
+  .signupRightSide{
+    background-color: #453F78;
+    border-radius: 20px;
   }
   .signupRightSide > h2 {
     font-size: 27px;
@@ -182,8 +192,6 @@
   }
   .signupForm > input {
     width: 60vw;
-  }
-  .signUpLeftSide {
-    display: none;
+    border-radius: 7px;
   }
 }

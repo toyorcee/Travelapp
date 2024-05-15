@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
       </div>
       <hr  className={classes.hr} />
-      <p className={classes.footerp} style={{textAlign: "center", fontSize: "large"}}>All rights reserved by <span  style={{color: "red"}}>toyorcee.</span> @2024</p>
+      <p className={classes.footerp} style={{textAlign: "center", fontSize: "large"}}>All rights reserved by <span  style={{color: "#F72798"}}>toyorcee.</span> @2024</p>
     </footer>
   );
 };
